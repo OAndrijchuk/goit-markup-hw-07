@@ -1,0 +1,63 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 112px 54px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/hero-section/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #2e2f42;
+}
+@media screen and (min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .hero-container {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/hero-section/bg@2x.jpg);
+            }
+}
+@media screen and (min-width: 1440px) {
+    .hero-container {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--white-text-and-background);
+}
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+            font-size: 56px;
+            line-height: 1.07;
+        }
+}
+
+.hero-btn{
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-text-and-background);
+
+    transition: background-color var(--anim-tranz-parameters);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--links-hover-color);
+    }
+}

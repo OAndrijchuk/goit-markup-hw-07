@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
   </head>
   <body>
     <!-- This is a header -->
@@ -53,13 +53,101 @@
             </li>
           </ul>
         </address>
+        <div class="menu-burger-conteiner">
+          <a href="" class="menu-burger-link js-open-menu link">
+            <svg width="32" height="22"></svg>
+            <!-- <svg
+              class="menu-burger-ico"
+              width="32"
+              height="22"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg> -->
+          </a>
+        </div>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <a href="" class="modal-close-link link js-close-menu">
+          <svg class="modal-page-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-modal"></use>
+          </svg>
+        </a>
+        <ul class="mobile-menu-list list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <address class="mobile-adress-conteiner">
+          <ul class="mobile-adress-list list">
+            <li class="mobile-adress-item">
+              <a class="mobile-contact-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-adress-item">
+              <a
+                class="mobile-contact-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="social-list list">
+          <li class="socal-list-item">
+            <a href="" class="social-list-link link">
+              <svg class="social-list-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socal-list-item">
+            <a href="" class="social-list-link link">
+              <svg class="social-list-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socal-list-item">
+            <a href="" class="social-list-link link">
+              <svg class="social-list-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socal-list-item">
+            <a href="" class="social-list-link link">
+              <svg class="social-list-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
       <!-- This is a hero section -->
       <section class="hero-section">
         <div class="hero-container container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <h1 class="hero-title title">
+            Effective Solutions <br />
+            For Your Business
+          </h1>
           <button class="hero-btn button" data-modal-open type="button">
             Order Service
           </button>
@@ -68,8 +156,8 @@
       <!-- This is a our features section -->
       <section class="features-section section">
         <div class="container">
-          <h2 class="unvizible-title">Our features</h2>
-          <ul class="card-list list">
+          <h2 class="visually-hidden">Our features</h2>
+          <ul class="features-card-list list">
             <li class="features-item">
               <div class="feature-icon-continer">
                 <svg class="feature-icon" width="64" height="64">
@@ -125,7 +213,7 @@
         </div>
       </section>
       <!-- This is what are we doing section -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="doing-title title">What are we doing</h2>
           <ul class="card-list list">
@@ -152,9 +240,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- This is team section -->
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="team-titlt title">Our Team</h2>
           <ul class="card-list list">
@@ -324,9 +412,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Customers section -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="customers-title title">Customers</h2>
           <ul class="clients-list list">
@@ -374,10 +462,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- This is footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-cont">
           <a class="logo-link link" href="./index.html"
@@ -438,7 +526,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Modal block -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -516,5 +604,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

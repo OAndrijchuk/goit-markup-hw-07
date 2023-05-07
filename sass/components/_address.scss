@@ -1,0 +1,44 @@
+.adress-conteiner{
+    display: none;
+    font-style: normal;
+}
+@media screen and (min-width: 768px) {
+    .adress-conteiner {
+            display: block;
+        }
+    .adress-item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .contact-link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: var(--body-text-color);
+
+        transition: color var(--anim-tranz-parameters);
+
+        &:hover,
+        &:focus {
+            color: var(--links-hover-color);
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .adress-item:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 40px;
+        }
+    .adress-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+}

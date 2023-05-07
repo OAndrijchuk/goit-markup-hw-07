@@ -1,0 +1,26 @@
+.modal-close-link {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
+    border-radius: 50%;
+
+    transition: background-color var(--anim-tranz-parameters),
+        color var(--anim-tranz-parameters);
+
+    &:hover,
+    &:focus {
+        background-color: var(--links-hover-color);
+        color: #ffffff;
+    }
+}
+
+.modal-page-icon {
+    fill: currentColor;
+}
