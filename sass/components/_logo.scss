@@ -10,13 +10,22 @@
     text-transform: uppercase;
     color: var(--btn-background-color);
 }
+
+.logo-link-studio {
+    color: var(--title-text-color);
+}
+
+.logo-link-studio-white {
+    color: #f4f4fd;
+}
+
 @media screen and (min-width: 768px) { 
     .logo-link {
         margin-right: 120px;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .logo-link {
         margin-right: 76px;
     }

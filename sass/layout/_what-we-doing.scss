@@ -1,0 +1,25 @@
+
+.what-we-do{
+    display: none;
+}
+
+@media screen and (min-width: 1158px) {
+    .what-we-do {
+        display: block;
+        padding-bottom: 120px;
+    }
+    .card-list {
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .doing-title {
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    }
+}
+
+

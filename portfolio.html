@@ -19,8 +19,8 @@
   </head>
   <body>
     <!-- This is a header -->
-    <header class="header">
-      <div class="page-header-container container">
+    <header class="header section">
+      <div class="page-header-container">
         <nav class="navigation">
           <a class="logo-link link" href="./index.html"
             >Web<span class="logo-link-studio">Studio</span></a
@@ -53,13 +53,102 @@
             </li>
           </ul>
         </address>
+        <div class="menu-burger-conteiner">
+          <button
+            type="button"
+            class="menu-burger-link js-open-menu link"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="menu-burger-ico"
+              width="32"
+              height="22"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button type="button" class="modal-close-link link js-close-menu">
+          <svg class="modal-page-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-modal"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-list list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <address class="mobile-adress-conteiner">
+          <ul class="mobile-adress-list list">
+            <li class="mobile-adress-item">
+              <a class="mobile-contact-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-adress-item">
+              <a
+                class="mobile-contact-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="social-list list">
+          <li class="socal-list-item">
+            <a href="" class="social-list-link link">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socal-list-item">
+            <a href="" class="social-list-link link">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socal-list-item">
+            <a href="" class="social-list-link link">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socal-list-item">
+            <a href="" class="social-list-link link">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
       <!-- This is a filter -->
       <section class="portfolio-section">
-        <div class="container">
-          <h1 class="unvizible-title">This is our projects</h1>
+        <div class="container portfolio-container">
+          <h1 class="visually-hidden">This is our projects</h1>
           <ul class="filter-btn-list list">
             <li>
               <button class="filter-btn button" type="button">All</button>
@@ -85,11 +174,16 @@
               <a href="" class="link project-link"
                 ><div class="project-card-img">
                   <img
+                    srcset="
+                      ./images/projects/banking_app.jpg    1x,
+                      ./images/projects/banking_app@2x.jpg 2x
+                    "
                     src="./images/projects/banking_app.jpg"
                     alt="Banking App Interface Concept"
                     width="360"
                     height="300"
                   />
+
                   <div class="project-hover-info">
                     <p class="project-hover-info-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -110,6 +204,10 @@
               <a href="" class="link project-link"
                 ><div class="project-card-img">
                   <img
+                    srcset="
+                      ./images/projects/cashless_payment.jpg    1x,
+                      ./images/projects/cashless_payment@2x.jpg 2x
+                    "
                     src="./images/projects/cashless_payment.jpg"
                     alt="payment through the app"
                     width="360"
@@ -133,6 +231,10 @@
               <a href="" class="link project-link"
                 ><div class="project-card-img">
                   <img
+                    srcset="
+                      ./images/projects/meditation_app.jpg    1x,
+                      ./images/projects/meditation_app@2x.jpg 2x
+                    "
                     src="./images/projects/meditation_app.jpg"
                     alt="an application for meditation on a computer and phone"
                     width="360"
@@ -156,6 +258,10 @@
               <a href="" class="link project-link"
                 ><div class="project-card-img">
                   <img
+                    srcset="
+                      ./images/projects/taxi_service.jpg    1x,
+                      ./images/projects/taxi_service@2x.jpg 2x
+                    "
                     src="./images/projects/taxi_service.jpg"
                     alt="Taxi"
                     width="360"
@@ -179,6 +285,10 @@
               <a href="" class="link project-link"
                 ><div class="project-card-img">
                   <img
+                    srcset="
+                      ./images/projects/screen_illustrations.jpg    1x,
+                      ./images/projects/screen_illustrations@2x.jpg 2x
+                    "
                     src="./images/projects/screen_illustrations.jpg"
                     alt="the phone and its screen"
                     width="360"
@@ -204,6 +314,10 @@
               <a href="" class="link project-link"
                 ><div class="project-card-img">
                   <img
+                    srcset="
+                      ./images/projects/online_courses.jpg    1x,
+                      ./images/projects/online_courses@2x.jpg 2x
+                    "
                     src="./images/projects/online_courses.jpg"
                     alt="girl with phone"
                     width="360"
@@ -227,6 +341,10 @@
               <a href="" class="link project-link"
                 ><div class="project-card-img">
                   <img
+                    srcset="
+                      ./images/projects/instagram_stories_concept.jpg    1x,
+                      ./images/projects/instagram_stories_concept@2x.jpg 2x
+                    "
                     src="./images/projects/instagram_stories_concept.jpg"
                     alt="app screenshots"
                     width="360"
@@ -252,6 +370,10 @@
               <a href="" class="link project-link">
                 <div class="project-card-img">
                   <img
+                    srcset="
+                      ./images/projects/organic_food.jpg    1x,
+                      ./images/projects/organic_food@2x.jpg 2x
+                    "
                     src="./images/projects/organic_food.jpg"
                     alt="person width organic food"
                     width="360"
@@ -275,6 +397,10 @@
               <a href="" class="link project-link"
                 ><div class="project-card-img">
                   <img
+                    srcset="
+                      ./images/projects/fresh_coffee.jpg    1x,
+                      ./images/projects/fresh_coffee@2x.jpg 2x
+                    "
                     src="./images/projects/fresh_coffee.jpg"
                     alt="make coffee"
                     width="360"
@@ -300,7 +426,7 @@
     </main>
     <!-- This is footer -->
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container section footer-container">
         <div class="footer-logo-cont">
           <a class="logo-link link" href="./index.html"
             >Web<span class="logo-link-studio-white">Studio</span></a
@@ -361,5 +487,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

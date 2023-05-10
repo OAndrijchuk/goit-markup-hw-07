@@ -1,0 +1,13 @@
+.filter-btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+    .filter-btn-list {
+        justify-content: center;
+    }
+}

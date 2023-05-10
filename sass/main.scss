@@ -2,10 +2,11 @@
 @import './utils/visually-hidden';
 
 @import './base/common';
-@import './base/container';
 @import './base/link';
 @import './base/list';
 @import './base/section';
+@import './base/container';
+@import './base/card-list';
 
 
 @import './components/logo';
@@ -27,17 +28,17 @@
 @import './layout/mobile-menu';
 @import './layout/hero';
 @import './layout/features';
-// @import './layout/what-we-doing';
-// @import './layout/team';
-// @import './layout/customers';
-// @import './layout/footer';
+@import './layout/what-we-doing';
+@import './layout/team';
+@import './layout/customers';
+@import './layout/footer';
 
 // ===========PORTFOLIO============
 
-// @import './layout/portfolio';
+@import './layout/portfolio';
 
-// @import './components/filter-btn';
-// @import './components/projects';
+@import './components/portfolio-btn';
+@import './layout/portfolio-projects';
 
 // ===========MODAL================
 

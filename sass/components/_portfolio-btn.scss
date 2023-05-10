@@ -1,0 +1,27 @@
+.filter-btn {
+    color: var(--btn-background-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    box-sizing: border-box;
+    background-color: #f4f4fd;
+    border: 1px solid #e7e9fc;
+    padding: 12px 24px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+
+    transition: box-shadow var(--anim-tranz-parameters),
+        background-color var(--anim-tranz-parameters),
+        color var(--anim-tranz-parameters), border var(--anim-tranz-parameters);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        background-color: var(--links-hover-color);
+        color: var(--white-text-and-background);
+        border: 1px solid transparent;
+    }
+}
