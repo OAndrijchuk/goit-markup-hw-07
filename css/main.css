@@ -297,6 +297,9 @@ ol {
 }
 .mobile-menu {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100%;
@@ -318,7 +321,7 @@ ol {
 }
 
 .mobile-menu-list {
-  margin-bottom: 284px;
+  margin-bottom: 40px;
 }
 
 .mobile-menu-item:not(:last-child) {
